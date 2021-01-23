@@ -28,8 +28,8 @@ public class Main {
                     if (raceParticipant.getMaxJump() >= obstacles1.detHeight()) {
                         System.out.println(raceParticipant.getName() + " преодолел препятствие " + obstacles1.getName());
                     } else {
-                        System.out.println(raceParticipant.getName() + " не перепрыгнул");
-
+                        System.out.println(raceParticipant.getName() + " не перепрыгнул, и сошел с дистанции");
+                        break;
 
                     }
                 }
@@ -37,8 +37,8 @@ public class Main {
                     if (raceParticipant.getMaxRun() >= obstacles1.getLength()) {
                         System.out.println(raceParticipant.getName() + " преодолел препятствие " + obstacles1.getName());
                     } else {
-                        System.out.println(raceParticipant.getName() + " не пробежал");
-
+                        System.out.println(raceParticipant.getName() + " не пробежал, и сошел с дистанции");
+                        break;
                     }
 
                 }
